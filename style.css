@@ -77,8 +77,13 @@ button:hover {
     background-color: hsl(223, 95%, 75%);
 }
 
-.input-area p {
-    display: none;
+.invalid-text {
+    visibility: hidden;
+    text-align: left;
+    margin: 5px 10%;
+    font-size: 13px;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
 }
 
 input {
