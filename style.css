@@ -140,3 +140,39 @@ small {
     margin: 15px;
     color: hsl(0, 0%, 59%);
 }
+
+@media(max-width: 900px) {
+    form {
+        display: block;
+        width: 70%;
+    }
+
+    input {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .invalid-text {
+        display: none;
+        text-align: center;
+        margin: 0 0 30px;
+    }
+}
+
+@media(max-width: 510px) {
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
