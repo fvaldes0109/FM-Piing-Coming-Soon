@@ -19,10 +19,16 @@ function attemptSubmit(event) {
     if (text.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
         event.target.submit();
     } else {
-        input.style.border = "1px solid hsl(354, 100%, 66%)";
+        input.style.border = '1px solid hsl(354, 100%, 66%)';
         validationText.style.visibility = 'visible';
         if (width <= 900) {
             validationText.style.display = 'block';
+        }
+        if (text.trim() == '') {
+            validationText.innerHTML = 'Whoops! It looks like you forgot to add your email';
+        }
+        else {
+            validationText.innerHTML = 'Please provide a valid email address';
         }
         return false;
     }
@@ -31,7 +37,7 @@ function attemptSubmit(event) {
 function resetValidity(event) {
 
     let width = document.body.clientWidth;
-    input.style.border = "1px solid hsl(0, 3%, 80%)";
+    input.style.border = '1px solid hsl(0, 3%, 80%)';
     validationText.style.visibility = 'hidden';
     if (width <= 900) {
         validationText.style.display = 'none';
