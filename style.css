@@ -105,8 +105,11 @@ input {
 }
 
 .icons {
-    display: flex;
-    
+    display: flex;    
+}
+
+li {
+    display: block;
 }
 
 .icon-container {
